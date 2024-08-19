@@ -1,128 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Units Counter</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
     <section class="section-container">
-      <main>
-        <div class="main-banner">
-          <div class="banner-text">
-            <i>Build your Cart<br />@Low Price</i>
-          </div>
+        
+        <main>
+            
+            <div class="main-banner">
+                
+                <div class="banner-text">
+                    <i>Build your Cart<br>@Low Price</i>
+                </div>
+                
+                <div class="cart-info">
+                    
+                    <div class="cart-item">
+                        
+                        <div class="cart-icon"><img src="./cart-large-2-svgrepo-com.svg" alt=""></div>
+                        
+                        <div class="cart-label"><i>your<br>cart</i></div>
 
-          <div class="cart-info">
-            <div class="cart-item">
-              <div class="cart-icon">
-                <img src="./cart-large-2-svgrepo-com.svg" alt="" />
-              </div>
+                    </div>
 
-              <div class="cart-label">
-                <i>your<br />cart</i>
-              </div>
+                    <div class="divider"></div>
+                    
+                    <div class="units-counter">
+                        <span class="units-number">0</span>
+                        <span class="units-text">units</span>
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="divider"></div>
+            <div class="products-container">
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./banana.png" alt="bananas">
+                    </div>
+                    <span class="product-name"><i>bananas</i></span>
+                    <a href="javascript:void()" class="add-to-cart-btn" id="btn_1">Add to Cart</a>
+                    <div class="ctr_btn">
+                        <span class=" minus" style="color: #0c5c96;"><img id="mbtn_1"  src="./minus-circle-svgrepo-com.svg" alt="" height="20px" width="20px"></span>
+                        <span>1</span>
+                        <span class=" plus" style="color: #0c5c96;"><img src="./plus-circle-svgrepo-com.svg" alt="" height="20px" width="20px"></span>
+                    </div>
+                </div>
 
-            <div class="units-counter">
-              <span class="units-number">0</span>
-              <span class="units-text">units</span>
-            </div>
-          </div>
-        </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./apple.png" alt="apples">
+                    </div>
+                    <span class="product-name"><i>apples</i></span>
+                    <a href="javascript:void()" class="add-to-cart-btn" id="btn_2">Add to Cart</a>
+                    <div class="ctr_btn">
+                        <span class=" minus" style="color: #0c5c96;"><img id="mbtn_2" src="./minus-circle-svgrepo-com.svg" alt="" height="20px" width="20px"></span>
+                        <span>1</span>
+                        <span class=" plus" style="color: #0c5c96;"><img src="./plus-circle-svgrepo-com.svg" alt="" height="20px" width="20px"></span>
+                    </div>
+                </div>
 
-        <div class="products-container">
-          <div class="product-card">
-            <div class="product-image">
-              <img src="./banana.png" alt="bananas" />
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./mangoes.png" alt="mangoes">
+                    </div>
+                    <span class="product-name"><i>mangoes</i></span>
+                    <a href="javascript:void()" class="add-to-cart-btn" id="btn_3">Add to Cart</a>
+                    <div class="ctr_btn">
+                        <span class=" minus" style="color: #0c5c96;"><img id="mbtn_3"  src="./minus-circle-svgrepo-com.svg" alt="" height="20px" width="20px"></span>
+                        <span>1</span>
+                        <span class=" plus" style="color: #0c5c96;"><img src="./plus-circle-svgrepo-com.svg" alt="" height="20px" width="20px"></span>
+                    </div>
+                </div>
+            
             </div>
-            <span class="product-name"><i>bananas</i></span>
-            <a href="javascript:void()" class="add-to-cart-btn" id="btn_1"
-              >Add to Cart</a
-            >
-            <div class="ctr_btn">
-              <span class="minus" style="color: #0c5c96"
-                ><img
-                  src="./minus-circle-svgrepo-com.svg"
-                  alt=""
-                  height="20px"
-                  width="20px"
-              /></span>
-              <span>1</span>
-              <span class="plus" style="color: #0c5c96"
-                ><img
-                  src="./plus-circle-svgrepo-com.svg"
-                  alt=""
-                  height="20px"
-                  width="20px"
-              /></span>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="./apple.png" alt="apples" />
-            </div>
-            <span class="product-name"><i>apples</i></span>
-            <a href="javascript:void()" class="add-to-cart-btn" id="btn_2"
-              >Add to Cart</a
-            >
-            <div class="ctr_btn">
-              <span class="minus" style="color: #0c5c96"
-                ><img
-                  src="./minus-circle-svgrepo-com.svg"
-                  alt=""
-                  height="20px"
-                  width="20px"
-              /></span>
-              <span>1</span>
-              <span class="plus" style="color: #0c5c96"
-                ><img
-                  src="./plus-circle-svgrepo-com.svg"
-                  alt=""
-                  height="20px"
-                  width="20px"
-              /></span>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="./mangoes.png" alt="mangoes" />
-            </div>
-            <span class="product-name"><i>mangoes</i></span>
-            <a href="javascript:void()" class="add-to-cart-btn" id="btn_3"
-              >Add to Cart</a
-            >
-            <div class="ctr_btn">
-              <span class="minus" style="color: #0c5c96"
-                ><img
-                  src="./minus-circle-svgrepo-com.svg"
-                  alt=""
-                  height="20px"
-                  width="20px"
-              /></span>
-              <span>1</span>
-              <span class="plus" style="color: #0c5c96"
-                ><img
-                  src="./plus-circle-svgrepo-com.svg"
-                  alt=""
-                  height="20px"
-                  width="20px"
-              /></span>
-            </div>
-          </div>
-        </div>
-      </main>
+        </main>
     </section>
 
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
