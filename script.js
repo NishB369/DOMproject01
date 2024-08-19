@@ -100,25 +100,32 @@ add_to_cart_btn_list.forEach(function (add_to_cart_btn) {
     let focused_btn = ctr_btn_list[Number(e.target.id[e.target.id.length - 1]) - 1];
     focused_btn.style.display = 'flex'
     focused_btn.children[1].innerText = individual_btn[e.target.id]
-
-    curr_plus_btn = e.target.id
   });
 });
 
 let plus_btn_list = document.querySelectorAll('.plus')
 plus_btn_list.forEach(function (plus_btn) {
-    plus_btn.addEventListener('click', function(e){        
+    plus_btn.addEventListener('click', function(e){   
+        
+        curr_plus_btn = e.target.id
+
+        let btn_p = curr_plus_btn.slice(1,curr_plus_btn.length);  
+
+        console.log(btn_p);
+        
 
         ctr = document.querySelector('.units-number')
         main_ctr+=1
         ctr.innerText = main_ctr
 
-        individual_btn[curr_plus_btn] += 1;
+        individual_btn[btn_p] += 1;
 
         let ctr_btn_list = document.querySelectorAll(".ctr_btn");
 
-        let focused_btn = ctr_btn_list[(curr_plus_btn[curr_plus_btn.length - 1]) - 1];
-        focused_btn.children[1].innerText = individual_btn[curr_plus_btn]
+        let focused_btn = ctr_btn_list[(btn_p[btn_p.length - 1]) - 1];
+        focused_btn.children[1].innerText = individual_btn[btn_p]
+
+          
 
     })
 })
@@ -129,12 +136,12 @@ minus_btn_list.forEach(function (minus_btn){
         // console.log(curr_minus_btn);
         // console.log(individual_btn[curr_minus_btn] == 1);
         
-        console.log(e);
+        // console.log(e);
         
 
         // console.log(add_to_cart_btn);
         curr_minus_btn = e.target.id
-        console.log(curr_minus_btn);
+        // console.log(curr_minus_btn);
         
     //    console.log(curr_minus_btn.slice(1,curr_minus_btn.length));
         
