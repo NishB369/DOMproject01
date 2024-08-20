@@ -81,7 +81,7 @@ body {
 .units-counter {
   background-color: #0c5c96;
   color: white;
-  width: 300px;
+  width: 150px;
   height: 65px;
   border-radius: 5px;
   align-items: center;
@@ -94,11 +94,35 @@ body {
   text-align: center;
   font-family: serif;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 20px;
 }
 
 .units-text {
+  font-size: 20px;
+}
+
+.price-counter {
+  background-color: #0c5c96;
+  color: white;
+  width: 150px;
+  height: 65px;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 2.5px;
+}
+
+.price-number {
+  text-align: center;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.price-text {
   font-size: 20px;
 }
 
@@ -142,8 +166,8 @@ body {
 .product-name {
   text-align: center;
   font-family: serif;
-  font-weight: 400;
-  font-size: 35px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 20px;
 }
 
